@@ -1,0 +1,257 @@
+/* Css reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navvigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+    width: 100%;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.4
+}
+
+/* Navvigation Bar Logo and Image */
+
+#logo {
+    margin: 0px 20px;
+
+}
+
+#logo img {
+    height: 70px;
+    border-radius: 100px;
+}
+
+
+/* Navvigation Bar List styling */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    font-family: "Trirong", serif;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 200px;
+    height: 390px;
+}
+
+#home::before {
+    content: "";
+    z-index: -1;
+    height: 412px;
+    width: 100%;
+    position: absolute;
+    background-image: url(fullimage.avif);
+    opacity: 0.85;
+}
+
+#home h1 {
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+
+}
+
+#home p {
+    font-size: 1rem;
+    font-family: "Trirong", serif;
+    text-align: center;
+}
+
+/* Services section */
+#services {
+    margin: 2px;
+    display: flex;
+}
+
+h1.h-primary-center {
+    padding: 15px;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 15px;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 189);
+}
+
+#services .box img {
+    border-radius: 20px;
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+.h-primary-center {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Audiowide", sans-serif;
+}
+
+.h-secondary-center {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Audiowide", sans-serif;
+}
+#services .box p{
+    font-family: "Trirong", serif;
+}
+
+/* clients */
+/* #clients-section{
+height: 344px;
+} */
+
+#client-section::before{
+content: "";
+position:absolute;
+background: url(deliverymanlogo.jpg) no-repeat;
+background-repeat:repeat;
+width: 100%;display: block;
+height: 500px;
+opacity: 0.2;
+z-index: -1;
+}
+
+   
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px ;
+    
+}
+ .clients-items{
+    padding: 5px 0px;
+}
+ 
+ .clients-items img{
+  height: 150px;
+  padding: 20px 20px;
+  margin: 40px;
+  border-radius: 130px;
+}
+
+/* contact */
+#contact{
+   margin: 0px;
+}
+
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 613px;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(cont.avif) no-repeat
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:7px;
+    font-size: 1.0rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.2rem;
+   font-family: "Trirong", serif;
+}
+
+#btn2{
+color: white;
+background-color: black;
+padding: 2px 5px;
+border-radius: 10px;
+border: 3px solid rgb(124, 20, 148);
+width: 100px;
+cursor: pointer;
+margin: 10px 200px;
+}
+
+
+.center1{
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+}
+
+/* utility class */
+
+.h-primary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: "Trirong", serif;
+}
+
+.btn {
+    margin: 17px;
+    color: white;
+    font-family: "Trirong", serif;
+    background-color: brown;
+    font-size: 1.2rem;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
