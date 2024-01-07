@@ -142,9 +142,6 @@ h1.h-primary-center {
 }
 
 /* clients */
-/* #clients-section{
-height: 344px;
-} */
 
 #client-section::before{
 content: "";
